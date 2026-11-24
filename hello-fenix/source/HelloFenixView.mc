@@ -9,6 +9,11 @@ class HelloFenixView extends WatchUi.View {
     private var _presses as Number = 0;
     private var _greeting as String = "";
     private var _hint as String = "";
+    
+    private var _inputText as String = "";
+
+    private var mySettings as DeviceSettings = System.getDeviceSettings();
+    private var Touchscreen as Lang.Boolean = mySettings.isTouchScreen;
 
     function initialize() {
         View.initialize();
@@ -20,6 +25,12 @@ class HelloFenixView extends WatchUi.View {
         System.println("View.onLayout " + dc.getWidth() + "x" + dc.getHeight());
         _greeting = WatchUi.loadResource(Rez.Strings.Greeting) as String;
         _hint = WatchUi.loadResource(Rez.Strings.Hint) as String;
+        
+        if(Touchscreen) {
+            _inputText ="Touch available";
+        } else {
+            _inputText = "buttons only";
+        }
     }
 
     //! Called every time the view comes to the foreground.
@@ -46,7 +57,11 @@ class HelloFenixView extends WatchUi.View {
 
         dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
         dc.drawText(cx, dc.getHeight()-40, Graphics.FONT_XTINY, _hint,
-            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_CENTER);
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+
+        dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(cx, 40, Graphics.FONT_XTINY, _hint,
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     
     }
 
@@ -60,4 +75,15 @@ class HelloFenixView extends WatchUi.View {
         _presses += 1;
         WatchUi.requestUpdate();
     }
+
+    function decrement() as Void{
+        _presses -=1;
+        WatchUi.requestUpdate();
+    }
+
+    function reset() as Void{
+        _presses = 0;
+        WatchUi.requestUpdate();
+    }
 }
+                                                                                                                           

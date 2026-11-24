@@ -13,6 +13,18 @@ class HelloFenixDelegate extends WatchUi.BehaviorDelegate {
         BehaviorDelegate.initialize();
         _view = view;
     }
+    
+    //down button
+    function onNextPage() as Boolean {
+        _view.decrement();
+        return true;
+    }
+
+    //up button
+    function onPreviousPage() as Boolean {
+        _view.reset();
+        return true;
+    }
 
     //! START/STOP button (top right). On touch watches a tap usually maps here too.
     function onSelect() as Boolean {
