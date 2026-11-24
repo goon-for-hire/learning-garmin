@@ -1,0 +1,77 @@
+[ @file = "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [System,2,14,20]; ]
+import Toybox.System;
+[ @file = "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [WatchUi,3,14,21]; ]
+import Toybox.WatchUi;
+//! Turns button presses (and taps) into calls on the view.
+[ @file = "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc"; @line = 6; @symbol_classdef = [HelloFenixDelegate,6,6,24]; @symbol_extends<0> = [WatchUi,6,33,40]; @symbol_extends<1> = [BehaviorDelegate,6,41,57]; ]
+class HelloFenixDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc"; @line = 10; @position = 16; @symbol_vardef = [_view,10,16,21]; @symbol_type<0> = [HelloFenixView,10,25,39]; ]
+    private
+    var _view as HelloFenixView;
+    [ @file = "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc"; @line = 12; @symbol_functiondef = [initialize,12,13,23]; @symbol_param<0> = [view,12,24,28]; @symbol_param<0>_type<0> = [HelloFenixView,12,32,46]; ]
+    function initialize(view as HelloFenixView) as Void {
+_home_aron_Projects_Garmin_Help_files_hello_fenix_source_HelloFenixDelegate_mc_12_48_15_4_start:
+[ "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc" 13 8 ]
+        symbol [ BehaviorDelegate %tmp.2 13 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 13 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc" 14 8 ]
+        %tmp.4 = lgetv %view;
+        symbol [ view %tmp.4 14 16 20 ];
+        symbol [ _view ? 14 8 13 ];
+        putv self :_view %tmp.4;
+_home_aron_Projects_Garmin_Help_files_hello_fenix_source_HelloFenixDelegate_mc_12_48_15_4_stop:
+    }
+    //! START/STOP button (top right). On touch watches a tap usually maps here too.
+    [ @file = "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc"; @line = 18; @symbol_functiondef = [onSelect,18,13,21]; @symbol_return<0> = [Boolean,18,27,34]; ]
+    function onSelect() as Boolean {
+_home_aron_Projects_Garmin_Help_files_hello_fenix_source_HelloFenixDelegate_mc_18_35_22_4_start:
+[ "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc" 19 8 ]
+        symbol [ System %tmp.1 19 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 19 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Delegate.onSelect";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc" 20 8 ]
+        symbol [ _view %tmp.5 20 8 13 ];
+        %tmp.5 = getv ? :_view;
+        symbol [ increment %tmp.6 20 14 23 ];
+        %tmp.6 = getv function %tmp.5 :increment;
+        invoke %tmp.5 %tmp.6();
+[ "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc" 21 8 ]
+        %tmp.7 = true;
+        ret %tmp.7;
+_home_aron_Projects_Garmin_Help_files_hello_fenix_source_HelloFenixDelegate_mc_18_35_22_4_stop:
+    }
+    //! Hold UP (middle left): the "menu" behaviour.
+    [ @file = "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc"; @line = 25; @symbol_functiondef = [onMenu,25,13,19]; @symbol_return<0> = [Boolean,25,25,32]; ]
+    function onMenu() as Boolean {
+_home_aron_Projects_Garmin_Help_files_hello_fenix_source_HelloFenixDelegate_mc_25_33_28_4_start:
+[ "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc" 26 8 ]
+        symbol [ System %tmp.1 26 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 26 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Delegate.onMenu";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc" 27 8 ]
+        %tmp.4 = false;
+        ret %tmp.4;
+_home_aron_Projects_Garmin_Help_files_hello_fenix_source_HelloFenixDelegate_mc_25_33_28_4_stop:
+    }
+}
+[ @file = "/home/aron/Projects/Garmin/Help files/hello-fenix/source/HelloFenixDelegate.mc"; @line = 1; ]
+<init> {
+}

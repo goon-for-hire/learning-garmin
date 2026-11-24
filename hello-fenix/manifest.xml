@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<iq:manifest version="3" xmlns:iq="http://www.garmin.com/xml/connectiq">
+    <!--
+        id:          a UUID that identifies this app forever. Generate your own:
+                     python3 -c "import uuid; print(uuid.uuid4().hex)"
+        type:        watch-app = a device app (launched from the app list)
+        entry:       the class that extends Application.AppBase
+        minApiLevel: the oldest Connect IQ API level this app supports
+    -->
+    <iq:application id="f2ccac228b7843c09556001a8c780b30"
+                    type="watch-app"
+                    name="@Strings.AppName"
+                    entry="HelloFenixApp"
+                    launcherIcon="@Drawables.LauncherIcon"
+                    minApiLevel="5.0.0"
+                    version="0.1.0">
+        <iq:products>
+            <iq:product id="fenix8solar51mm"/>
+        </iq:products>
+        <iq:permissions/>
+        <iq:languages>
+            <iq:language>eng</iq:language>
+        </iq:languages>
+        <iq:barrels/>
+    </iq:application>
+</iq:manifest>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<iq:manifest version="3" xmlns:iq="http://www.garmin.com/xml/connectiq">
+    <iq:application id="8f945afc8446456f9b4bf7951ac604c2"
+                    type="watchface"
+                    name="@Strings.AppName"
+                    entry="MeridianApp"
+                    launcherIcon="@Drawables.LauncherIcon"
+                    minApiLevel="5.0.0"
+                    version="0.1.0">
+        <iq:products>
+            <iq:product id="fenix8solar51mm"/>
+        </iq:products>
+        <iq:permissions/>
+        <iq:languages>
+            <iq:language>eng</iq:language>
+            <iq:language>swe</iq:language>
+        </iq:languages>
+        <iq:barrels/>
+    </iq:application>
+</iq:manifest>

@@ -1,0 +1,9 @@
+<properties>
+    <!-- 0 = follow the watch, 1 = kg, 2 = lb -->
+    <property id="Units" type="number">0</property>
+    <property id="RestSeconds" type="number">90</property>
+    <property id="RestVibrate" type="boolean">true</property>
+    <property id="RestTone" type="boolean">true</property>
+    <property id="ExportUrl" type="string"></property>
+    <property id="PlanUrl" type="string"></property>
+</properties>

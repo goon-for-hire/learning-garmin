@@ -1,0 +1,4 @@
+project.manifest = manifest.xml
+
+# 3 = Strict type checking (same as monkeyc -l 3). Module 4 explains the levels.
+project.typecheck = 3

@@ -1,0 +1,85 @@
+<strings>
+    <string id="AppName">SetLog</string>
+
+    <!-- The glance runs with a small memory budget and only sees resources
+         marked scope="glance". -->
+    <string id="GlanceTitle" scope="glance">SETLOG</string>
+    <string id="GlanceEmpty" scope="glance">No workouts yet</string>
+    <string id="GlanceLast" scope="glance">$1$ d ago · $2$ sets</string>
+
+    <!-- Exercises. The order here is the order in Exercises.mc. -->
+    <string id="ExSquat">Squat</string>
+    <string id="ExBench">Bench press</string>
+    <string id="ExDeadlift">Deadlift</string>
+    <string id="ExPress">Overhead press</string>
+    <string id="ExRow">Barbell row</string>
+    <string id="ExPullUp">Pull-up</string>
+    <string id="ExDip">Dip</string>
+    <string id="ExLunge">Lunge</string>
+
+    <!-- Main screen -->
+    <string id="ChangeHint">UP/DOWN: exercise</string>
+    <string id="ReadyHint">START to begin</string>
+    <string id="SetLabel">SET $1$</string>
+    <string id="LiftHint">BACK when the set is done</string>
+    <string id="LastLabel">Last: $1$ × $2$ $3$</string>
+    <string id="RestLabel">REST</string>
+    <string id="NextLabel">Next: $1$, set $2$</string>
+    <string id="PausedLabel">PAUSED</string>
+    <string id="PausedHint">START resume · BACK menu</string>
+    <string id="TotalsLabel">$1$ sets · $2$ $3$</string>
+    <string id="SavedLabel">SAVED</string>
+    <string id="DiscardedLabel">DISCARDED</string>
+    <string id="MinutesLabel">$1$ min</string>
+    <string id="DoneHint">START new · BACK exit</string>
+    <string id="HrLabel">HR $1$</string>
+
+    <!-- Menus -->
+    <string id="MenuTitle">SetLog</string>
+    <string id="MenuExercise">Exercise</string>
+    <string id="MenuRest">Rest time</string>
+    <string id="MenuHistory">History</string>
+    <string id="MenuSettings">Settings</string>
+    <string id="MenuSend">Send last workout</string>
+    <string id="PausedTitle">Paused</string>
+    <string id="Resume">Resume</string>
+    <string id="Save">Save</string>
+    <string id="Discard">Discard</string>
+    <string id="DiscardQ">Discard this workout?</string>
+    <string id="HistoryEmpty">No workouts yet</string>
+    <string id="HistoryLine">$1$ sets · $2$ $3$ · $4$ min</string>
+    <string id="SettingsTitle">Settings</string>
+
+    <!-- Pickers and toasts -->
+    <string id="PickerTitle">Reps × $1$</string>
+    <string id="RestPickerTitle">Rest (s)</string>
+    <string id="SetLogged">Set $1$ logged</string>
+    <string id="NoExportUrl">Set an export URL first</string>
+    <string id="NothingToSend">No workout to send</string>
+    <string id="NoPhone">Phone not connected</string>
+    <string id="Sending">Sending...</string>
+    <string id="Sent">Sent</string>
+    <string id="SendFailed">Send failed: $1$</string>
+
+    <!-- Settings: used on the watch and in the phone app -->
+    <string id="SetUnits">Weight units</string>
+    <string id="UnitsWatch">Watch setting</string>
+    <string id="UnitsKg">kg</string>
+    <string id="UnitsLb">lb</string>
+    <string id="SetVibrate">Vibrate after rest</string>
+    <string id="SetTone">Beep after rest</string>
+
+    <!-- Settings only shown in the phone app: scope="settings" keeps them out of the watch's memory. -->
+    <string id="SetRest" scope="settings">Rest time (seconds)</string>
+    <string id="SetExportUrl" scope="settings">Export URL (receives a POST)</string>
+    <string id="SetPlanUrl" scope="settings">Plan URL (JSON with a "note")</string>
+
+    <!-- Labels Garmin Connect shows for the FIT developer fields -->
+    <string id="FitReps">Reps</string>
+    <string id="FitRepsUnit">reps</string>
+    <string id="FitLoad">Load</string>
+    <string id="FitKg">kg</string>
+    <string id="FitSets">Sets</string>
+    <string id="FitSetsUnit">sets</string>
+    <string id="FitVolume">Volume</string>
+</strings>

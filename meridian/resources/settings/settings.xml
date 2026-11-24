@@ -1,0 +1,14 @@
+<settings>
+    <!-- Shown in the Connect IQ phone app once the face is installed from the store (beta works). -->
+    <setting propertyKey="@Properties.AccentColor" title="@Strings.AccentTitle">
+        <settingConfig type="list">
+            <listEntry value="16733440">@Strings.Orange</listEntry>  <!-- 0xFF5500 -->
+            <listEntry value="65280">@Strings.Green</listEntry>      <!-- 0x00FF00 -->
+            <listEntry value="43775">@Strings.Blue</listEntry>       <!-- 0x00AAFF -->
+            <listEntry value="16755200">@Strings.Yellow</listEntry>  <!-- 0xFFAA00 -->
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.ShowSeconds" title="@Strings.SecondsTitle">
+        <settingConfig type="boolean"/>
+    </setting>
+</settings>

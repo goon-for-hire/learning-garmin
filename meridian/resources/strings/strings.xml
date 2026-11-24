@@ -1,0 +1,10 @@
+<strings>
+    <string id="AppName">Meridian</string>
+    <string id="SettingsTitle">Meridian</string>
+    <string id="AccentTitle">Accent colour</string>
+    <string id="SecondsTitle">Show seconds</string>
+    <string id="Orange">Orange</string>
+    <string id="Green">Green</string>
+    <string id="Blue">Blue</string>
+    <string id="Yellow">Yellow</string>
+</strings>

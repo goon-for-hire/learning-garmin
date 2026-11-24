@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<iq:manifest version="3" xmlns:iq="http://www.garmin.com/xml/connectiq">
+    <iq:application id="df71492de1454ddea349ac8c088c66dc"
+                    type="watch-app"
+                    name="@Strings.AppName"
+                    entry="KoansApp"
+                    launcherIcon="@Drawables.LauncherIcon"
+                    minApiLevel="5.0.0"
+                    version="0.1.0">
+        <iq:products>
+            <iq:product id="fenix8solar51mm"/>
+        </iq:products>
+        <iq:permissions/>
+        <iq:languages>
+            <iq:language>eng</iq:language>
+        </iq:languages>
+        <iq:barrels/>
+    </iq:application>
+</iq:manifest>

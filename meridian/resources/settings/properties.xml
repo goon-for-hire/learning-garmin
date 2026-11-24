@@ -1,0 +1,5 @@
+<properties>
+    <!-- 16733440 = 0xFF5500 (orange). Values are plain decimal numbers. -->
+    <property id="AccentColor" type="number">16733440</property>
+    <property id="ShowSeconds" type="boolean">true</property>
+</properties>

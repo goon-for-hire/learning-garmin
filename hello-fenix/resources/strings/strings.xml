@@ -1,0 +1,5 @@
+<strings>
+    <string id="AppName">HelloFenix</string>
+    <string id="Greeting">Hello, fenix!</string>
+    <string id="Hint"> Press START </string>
+</strings>

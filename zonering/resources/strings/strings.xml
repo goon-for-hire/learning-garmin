@@ -1,0 +1,8 @@
+<strings>
+    <string id="AppName">ZoneRing</string>
+    <string id="ZoneChartTitle">HR zone</string>
+    <string id="ZoneLabel">HR zone</string>
+    <string id="ZoneUnits">zone</string>
+    <string id="HardLabel">Zone 4+ time</string>
+    <string id="HardUnits">min</string>
+</strings>

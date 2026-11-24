@@ -1,0 +1,10 @@
+<fitContributions>
+    <!-- id matches the fieldId passed to createField(). -->
+    <!-- Record field: a chart over the activity. -->
+    <fitField id="0" displayInChart="true" sortOrder="0" precision="1"
+              chartTitle="@Strings.ZoneChartTitle" dataLabel="@Strings.ZoneLabel"
+              unitLabel="@Strings.ZoneUnits" fillColor="#FF5500"/>
+    <!-- Session field: one number in the activity summary. -->
+    <fitField id="1" displayInActivitySummary="true" sortOrder="1" precision="1"
+              dataLabel="@Strings.HardLabel" unitLabel="@Strings.HardUnits"/>
+</fitContributions>

@@ -1,0 +1,25 @@
+<settings>
+    <!-- Shown in the Connect IQ phone app once SetLog is installed from the store (beta works). -->
+    <setting propertyKey="@Properties.Units" title="@Strings.SetUnits">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.UnitsWatch</listEntry>
+            <listEntry value="1">@Strings.UnitsKg</listEntry>
+            <listEntry value="2">@Strings.UnitsLb</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.RestSeconds" title="@Strings.SetRest">
+        <settingConfig type="numeric" min="15" max="600"/>
+    </setting>
+    <setting propertyKey="@Properties.RestVibrate" title="@Strings.SetVibrate">
+        <settingConfig type="boolean"/>
+    </setting>
+    <setting propertyKey="@Properties.RestTone" title="@Strings.SetTone">
+        <settingConfig type="boolean"/>
+    </setting>
+    <setting propertyKey="@Properties.ExportUrl" title="@Strings.SetExportUrl">
+        <settingConfig type="alphaNumeric"/>
+    </setting>
+    <setting propertyKey="@Properties.PlanUrl" title="@Strings.SetPlanUrl">
+        <settingConfig type="alphaNumeric"/>
+    </setting>
+</settings>

@@ -1,0 +1,12 @@
+<fitContributions>
+    <!-- Lap fields: one row per set (and zeros for the rest laps between sets). -->
+    <fitField id="0" displayInActivityLaps="true" sortOrder="0" precision="0"
+              dataLabel="@Strings.FitReps" unitLabel="@Strings.FitRepsUnit"/>
+    <fitField id="1" displayInActivityLaps="true" sortOrder="1" precision="1"
+              dataLabel="@Strings.FitLoad" unitLabel="@Strings.FitKg"/>
+    <!-- Session fields: one number each in the activity summary. -->
+    <fitField id="2" displayInActivitySummary="true" sortOrder="2" precision="0"
+              dataLabel="@Strings.FitSets" unitLabel="@Strings.FitSetsUnit"/>
+    <fitField id="3" displayInActivitySummary="true" sortOrder="3" precision="0"
+              dataLabel="@Strings.FitVolume" unitLabel="@Strings.FitKg"/>
+</fitContributions>
